@@ -1,0 +1,272 @@
+/* ================================
+    --Primary layout--
+================================ */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(145, 211, 255, 0.11);
+}
+    
+#choice {
+    text-align: center;
+    font-size: 1em;
+    color: #4e69867c;
+    letter-spacing: 1.3px;
+}
+
+header {
+    background-color:#243344ee;
+    color: ghostwhite;
+    text-align: center;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    height: 70px;
+    padding-top: 2%;
+}
+
+h1 {
+    margin: 15px;
+    font-family: 'Merriweather', serif;
+}
+
+h2 {
+    margin-bottom: 0px;
+    letter-spacing: 0.6px;
+}
+
+main {
+    padding: 20px 15px 5px;
+}
+#heading {
+   text-align: center;
+   margin: 20px 0 5px;
+   color: rgba(14, 7, 54, 0.74);
+}
+
+p {
+    margin-top: 0.5%;
+    font-size: 110%;
+}
+
+#footer {
+    text-align: center;
+    font-style: italic;
+    font-size: 1em;
+    color: #4e69867c;
+    margin-top: 15px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.contact_info, .newsletter_info {
+    font-weight: bold;
+    font-size: 22px;
+    color: rgba(14, 7, 54, 0.74);
+}
+
+.separator {
+    width: 95%;
+    margin: auto;
+    height: 6px;
+    background-color: transparent;
+    border-top: 3px solid rgba(14, 7, 54, 0.74);
+    border-bottom: 1.5px solid rgba(14, 7, 54, 0.74);
+}
+
+.separator2 {
+    width: 95%;
+    margin: auto;
+    height: 5px;
+    border-bottom: 2px solid rgba(14, 7, 54, 0.74);
+}
+    
+.fieldset_contact {    
+    font-size: 1.1em;   
+    border: none;
+    margin: 30px 0 0;
+    color: rgba(14, 7, 54, 0.74);
+}
+
+.fieldset_newsletter {
+    width: 100%; 
+    margin: 30px 0 10px;
+    font-size: 16px;
+    color: rgba(14, 7, 54, 0.74);
+    border: none;
+    line-height: 190%;
+}
+
+.contact_tag {   
+    width: 150px; 
+    font-size: 16px;
+    color: rgba(14, 7, 54, 0.596);
+    margin: auto 0 10px 0;
+}
+
+#fieldset_contact input:focus,
+#fieldset_newsletter input:focus,
+select:focus, textarea:focus {
+    background-color: #52bab33a;
+    color: #4e6986ad;
+}
+
+input, select, textarea {
+    transition: 0.3s;
+}
+
+input :focus, textarea :focus {
+    border-color: #52bab3;
+} 
+
+input[type="checkbox"]:checked + label, input[type="radio"]:checked + label {
+    font-weight: bold;
+}
+
+::placeholder {
+    text-align: right;
+    font-style: italic;
+    color: transparent;
+}
+
+#full_name::placeholder, #email::placeholder {
+    color: #4e69867c; 
+    margin-right: 3%;   
+}
+
+#state {
+    color: #4e69867c;  
+}
+
+textarea:hover::placeholder {
+    text-align: left;
+    color: #151e29;
+}
+
+.topics {
+    color: rgba(14, 7, 54, 0.74);
+    margin: auto;
+    font-size: 20px;
+}
+
+textarea {
+    width: 100%;
+    border-color: transparent;
+    border-radius: 5px;
+    background-color: #f0f2f3b4;
+    height: 90px;  
+    margin-bottom: 20px;
+}
+
+#Newsletter, #Newsletter_format {
+    margin: 10px 0 0;
+    letter-spacing: 0.6px;
+}
+
+button {
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: #52bab3;
+    border-color: transparent;
+    border-radius: 4px;
+    font-size: 1.1em;
+    margin: 5px auto;
+    width: 100%;
+    height: 60px;  
+}
+
+button:hover {
+    transform: scale(.9);
+}
+
+input[type="text"], input[type="email"], input[type="tel"], select {
+    background: #f0f2f3b4;
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px 5px;
+    border: transparent;
+    font-size: 12px;
+    height: 50px;
+    margin-bottom: 15px;       
+}
+
+#zipcode {
+    width: 50%;
+}
+
+
+/* ================================
+    Media Queries
+================================ */
+/*  --  768px  --  */
+
+@media (min-width: 768px) {
+    body {
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        padding: 0.5px;
+    }
+
+    main {
+        margin: 10px auto;
+        min-width: 530px;
+    }
+
+    #choice {
+        margin: 0% 5% 7%;
+        text-align: center;
+        font-size: 0.8em;
+        color: #4e69867c;
+    }
+    
+    .contact_tag {
+        padding-bottom: 15px;
+    }
+
+    textarea {
+        margin: auto auto 15px;
+    }
+        
+    .flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #contact-fieldset #zipcode {
+        width: 25%;
+        margin-right: auto;
+        margin-left: 6.4rem;
+    }
+    
+    #heading h2 {
+        margin: 0;
+    }
+
+    #zipcode {
+        width: 25%;
+        
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"], select {
+        width: 390px;
+        height: 40px;
+    }
+
+}
+        
