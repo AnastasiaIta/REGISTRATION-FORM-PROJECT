@@ -118,7 +118,7 @@ p {
 #fieldset_newsletter input:focus,
 select:focus, textarea:focus {
     background-color: #52bab33a;
-    color: #4e6986ad;
+    color: #4e6986ad
 }
 
 input, select, textarea {
@@ -136,7 +136,7 @@ input[type="checkbox"]:checked + label, input[type="radio"]:checked + label {
 ::placeholder {
     text-align: right;
     font-style: italic;
-    color: transparent;
+    color: #4e69867c;
 }
 
 #full_name::placeholder, #email::placeholder {
@@ -150,7 +150,7 @@ input[type="checkbox"]:checked + label, input[type="radio"]:checked + label {
 
 textarea:hover::placeholder {
     text-align: left;
-    color: #151e29;
+    color: #4e69867c; 
 }
 
 .topics {
@@ -163,9 +163,10 @@ textarea {
     width: 100%;
     border-color: transparent;
     border-radius: 5px;
-    background-color: #f0f2f3b4;
+    background: #92bed449;
     height: 90px;  
     margin-bottom: 20px;
+    margin-right: 3%;   
 }
 
 #Newsletter, #Newsletter_format {
@@ -190,7 +191,7 @@ button:hover {
 }
 
 input[type="text"], input[type="email"], input[type="tel"], select {
-    background: #f0f2f3b4;
+    background: #92bed449;
     border-radius: 5px;
     width: 100%;
     padding: 5px 5px;
@@ -259,8 +260,7 @@ input[type="text"], input[type="email"], input[type="tel"], select {
     }
 
     #zipcode {
-        width: 25%;
-        
+        width: 25%; 
     }
 
     input[type="text"], input[type="email"], input[type="tel"], select {
